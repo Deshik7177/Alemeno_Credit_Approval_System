@@ -1,29 +1,27 @@
-## Credit scores
+Credit Score Breakdown
+Here’s the lowdown on how a user’s credit score is cooked up:
 
-These factors determine the credit score of a user:
+Loan Utilization Ratio (25%): How much of their approved credit limit are they currently using on active loans? Ideally, sticking around 30% usage is the sweet spot (source). The closer they are to this, the better their score.
 
-> How much percentage of the approved limit has the customer used to take their active loans? Since it is recommended that 30% is ideal ([source]( https://www.paisabazaar.com/credit-score/cibil-score-calculation/)), we give scores based on that. Weightage is 25%.
+EMI Payment Behavior (30%): The ratio of EMIs paid on time versus late payments. Bonus points if they pay early! The more upfront they are, the more brownie points they rack up.
 
-> Percentage of EMIs paid on time vs EMIs not paid on time, since customers can pay in advance, a higher score is given to customers who pay in advance. Weightage is 30%.
+Average Loan Tenure (15%): Customers who usually take loans with longer repayment periods earn a higher score because it signals trustworthiness.
 
-> Customers who take loans for higher periods on average are given a higher score. Weightage is 15%.
+Age of Oldest Loan (10%): The longer a customer has been managing loans, the more reliable they’re considered, so older loans boost their credit rating.
 
-> Older customers are trusted and deserve a higher rating, so the older loan the customer has taken the better the score they get. Weightage is 10%.
+Number of Loans Taken (20%): The more loans a customer has successfully handled, the higher their rating climbs.
 
-> The more loans they take, the higher the rating the customer gets. Weightage is 20%.
+Loan Approval Rules
+How loans get greenlit based on that credit score:
 
-## Loan Approval
+If Credit Score > 50: Loan gets approved, no questions asked.
 
-Based on the credit score of the customer, loans are approved as follows:
+If Credit Score is between 30 and 50: Loan can be approved but only if the interest rate is above 12%.
 
-`Credit rating > 50: approve loan`
+If Credit Score is between 10 and 30: Loan approval only if interest rate is above 16%.
 
-`50 > credit rating > 30: approve loans with interest rate > 12%`
+If Credit Score < 10: Nope, no loan approval here.
 
-`30 > credit rating > 10: approve loans with interest rate > 16%`
+Also, if the total EMIs a customer pays each month exceed 50% of their monthly salary, loan approval is denied — gotta keep those finances balanced.
 
-`10 > credit rating: don’t approve any loans`
-
-`If the sum of all current EMIs exceeds 50% of the monthly salary, don’t approve any loans`
-
-`If the interest rate does not match as per the credit limit, correct the interest rate in the response`
+If the given interest rate doesn’t match the credit score-based rules, the system automatically adjusts it in the response.
