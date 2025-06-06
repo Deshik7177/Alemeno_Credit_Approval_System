@@ -1,16 +1,16 @@
 # Credit Approval System
 
-This project is a credit approval system that determines loan eligibility based on past loan data. It includes APIs for adding new customers, checking loan eligibility, processing new loans, and viewing loan details.
+Welcome, your no-nonsense credit approval system that’s all about deciding if someone’s ready to get that loan or nah — based on their past loan moves. Think of it as the gatekeeper that checks the receipts before saying yes or no.
 
-## Features
+## What This Does
 
-- Add a new customer to the customer table
-- Check loan eligibility based on credit score
-- Process a new loan based on eligibility
-- View loan details and customer details
-- View all current loan details by customer ID
+- Add new customers — build that squad in the database.
+- Check loan eligibility — crunches the credit score to see if you’re good to go.
+- Process new loans — if you’re eligible, boom, the loan’s in motion.
+- View loan & customer details — get the full tea on loans and who's got 'em.
+- See all active loans by customer — track the hustle customer-wise.
 
-## Technologies Used
+## Tech Stack
 
 - Django
 - PostgreSQL
@@ -19,7 +19,7 @@ This project is a credit approval system that determines loan eligibility based 
 
 ## API Endpoints
 
-All APIs run under `/api/v1/`:
+All APIs run under `/`:
 1. `/register/`: Add a new customer
 2. `/check-eligibility/`: Check loan eligibility based on credit score
 3. `/create-loan/`: Process a new loan based on eligibility
@@ -35,33 +35,26 @@ Note: Make sure to add a slash ('/') at the end of the API.
 - Docker Desktop
 - docker-compose
 
-## Running the Application
+## How To Run This Thing — Step by Step
 
->Clone this project
+>Clone this Repo
 ```bash
-git clone https://github.com/kushalv238/credit_approval_system.git
-```
->Navigate to the project directory
-```bash
-cd credit_approval_system
-```
->Start the Docker engine by starting the Docker Desktop or by using [OS utilities](https://docs.docker.com/config/daemon/start/)
+git clone https://github.com/Deshik7177/Alemeno_Credit_Approval_System.git
+
+>Make sure your Docker engine’s running—open Docker Desktop or start it using your OS’s way.
 
 >Run Docker Compose
 ```bash
 docker-compose up
 ```
->Access the APIs at
+>Hit the APIs:
 ```bash
-http://localhost:8000/api/v1/
+http://localhost:8000/
 ```
 
 ## Testing the project
 Use this Postman collection with existing APIs to test the project
 
-[Collection](https://www.postman.com/telecoms-geologist-66457404/workspace/open/collection/26309885-7d351ebb-b7c9-4ee6-8447-239e59c549bc)
-
-Note: Change the agent to [desktop agent](https://www.postman.com/downloads/postman-agent/) if you run Postman on a browser. The option can be found on the bottom right.
 
 ## Adding production secrets
 Create a ```.env``` file in the root directory of this project & add a [SECRET_KEY](https://docs.djangoproject.com/en/5.0/ref/settings/#secret-key) for django to use.
@@ -74,8 +67,7 @@ get_random_secret_key()
 ```
 SECRET_KEY=your_secret_key_here
 ```
-
-Note: By default this application uses an insecure key please change it to avoid unwanted attacks.
+Follow example.env
 
 ## Author
-[Kushal Vadodaria](https://linkedin.com/in/kushal-vadodaria/)
+Paila Dhana Deshik (www.linkedin.com/in/paila-dhana-deshik-b4986a293, pdhanadeshik7177@gmail.com)
