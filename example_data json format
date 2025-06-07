@@ -1,0 +1,48 @@
+🔹/register/
+Method: POST
+
+JSON Format:
+{
+  "first_name": "Deshik",
+  "last_name": "Kumar",
+  "age": 22,
+  "monthly_salary": 50000,
+  "phone_number": 9876543210
+}
+
+🔹/check-eligibility/
+Method: POST
+
+JSON Format:
+{
+  "customer_id": "abc123",
+  "loan_amount": 300000,
+  "interest_rate": 14,
+  "tenure": 12
+}
+
+
+🔹 /create-loan/
+Method: POST
+
+JSON Format:
+
+{
+  "customer_id": "abc123",
+  "loan_amount": 300000,
+  "interest_rate": 14,
+  "tenure": 12
+}
+(Same input as check-eligibility, but this one actually creates the loan in DB)
+
+🔹 /view-loan/<loan_id>/
+Method: GET
+
+No JSON Body
+/view-loan/2/
+
+🔹 /view-loans/<customer_id>/
+Method: GET
+
+No JSON Body
+/view-loans/abc123/
