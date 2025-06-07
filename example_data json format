@@ -4,8 +4,8 @@ Method: POST
 JSON Format:
 {
   "first_name": "Deshik",
-  "last_name": "Kumar",
-  "age": 22,
+  "last_name": "paila",
+  "age": 20,
   "monthly_salary": 50000,
   "phone_number": 9876543210
 }
