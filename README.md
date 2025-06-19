@@ -8,7 +8,7 @@ Welcome, your no-nonsense credit approval system that’s all about deciding if 
 - Check loan eligibility — crunches the credit score to see if you’re good to go.
 - Process new loans — if you’re eligible, boom, the loan’s in motion.
 - View loan & customer details — get the full tea on loans and who's got 'em.
-- See all active loans by customer — track the hustle customer-wise
+- See all active loans by customer — track the hustle customer-wise.
 
 ## Tech Stack
 
