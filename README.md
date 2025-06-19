@@ -22,7 +22,7 @@ Welcome, your no-nonsense credit approval system that’s all about deciding if 
 All APIs run under `/`:
 1. `/register/`: Add a new customer.
 2. `/check-eligibility/`: Check loan eligibility based on credit score.
-3. `/create-loan/`: Process a new loan based on eligibility
+3. `/create-loan/`: Process a new loan based on eligibility.
 4. `/view-loan/loan_id/`: View loan details and customer details by loan ID
 5. `/view-loans/customer_id/`: View all current loan details by customer ID
 
